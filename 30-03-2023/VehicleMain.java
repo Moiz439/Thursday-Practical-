@@ -1,31 +1,31 @@
-class Vehicle
+class Vehicle  // create Vehicle class.
 {
-	String Brand;
+	String Brand;  // declare variables.
 	String Model;
 	String Year;
-	public void drive()
+	public void drive() // create drive() method. 
 	{
-		Brand="SUZUKI";
+		Brand="SUZUKI";  // initialized thevariables.
 		Model="AULTO";
 		Year="2015";
 	}
 }
-class Car extends Vehicle
+class Car extends Vehicle  //create Car class and Car class extends Vehicle class.
 {
-	String Color;
-	public void type()
+	String Color; // declare Color variable.
+	public void type() // create type() method.
 	{
-		Color="Red";
+		Color="Red"; //initializ the Color.
 		System.out.println("Brand :"+Brand+"\nModel :"+Model+"\nYear :"+Year+"\nColor :"+Color);
 	}
 }
-public class VehicleMain {
+public class VehicleMain {  // create VehicleMain class.
 
-	public static void main(String[] args) {
-		Car c=new Car();
-		c.drive();
-		c.type();
-
+	public static void main(String[] args) {  // create mai() method.
+		Car c=new Car();  //create a object of Car class.
+		c.drive(); // call drive() method.
+		c.type();  // call type() method.
+ 
 	}
 
 }
