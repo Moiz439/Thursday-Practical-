@@ -9,7 +9,7 @@ class Circle extends Shape // create Circle class and extends shape class.
 	{
 		double area,r;
 		r=10;
-		area=2*3.14*r;
+		area=3.14*r*r;
 		System.out.println("Area of Circle :"+area);
 	}
 }
