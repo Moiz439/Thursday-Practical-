@@ -1,11 +1,11 @@
-abstract class Shape
+abstract class Shape  // create Abstract class here.
 {
-	abstract void calculateArea();
+	abstract void calculateArea();  // declare an abstract method calculateArea().
 	
 }
-class Circle extends Shape
+class Circle extends Shape // create Circle class and extends shape class.
 {
-	void calculateArea()
+	void calculateArea()  // implemets the calculateAreat() method for circle class.
 	{
 		double area,r;
 		r=10;
@@ -13,9 +13,9 @@ class Circle extends Shape
 		System.out.println("Area of Circle :"+area);
 	}
 }
-class Rectangle extends Shape
+class Rectangle extends Shape    // create Circle Rectangle  and extends shape class.
 {
-	void calculateArea()
+	void calculateArea()  // implemets the calculateAreat() method for Rectabgle class.
 	{
 		double area,l,b;
 		l=10;b=5;
@@ -24,13 +24,13 @@ class Rectangle extends Shape
 	}
 }
 
-public class AbstractClassEx {
+public class AbstractClassEx { //Create a main Class .
 
-	public static void main(String[] args) {
-		Circle c=new Circle();
-		c.calculateArea();
-		Rectangle r=new Rectangle();
-		r.calculateArea();
+	public static void main(String[] args) {  //create a main() method.
+		Circle c=new Circle();  // create an object of circle class.
+		c.calculateArea();  // calculateArea() method is called for circle class.
+		Rectangle r=new Rectangle(); // create an object of Rectangle class.
+		r.calculateArea();  // calculateArea() method is called for Rectangle class.
 	}
 
 }
