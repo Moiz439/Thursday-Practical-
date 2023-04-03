@@ -11,13 +11,13 @@ class Person // create Person class.
 }
 class Student extends Person // create Student class and extends Person class.
 {
-	String gread;
-	void study(String name,int age,String gread) // create stydy() method.
+	String grade;
+	void study(String name,int age,String grade) // create stydy() method.
 	{
         this.name=name;
         this.age=age;
-        this.gread=gread;
-		System.out.println("\nName :"+name+"\t Age :"+age+"\t Gread :"+gread);
+        this.grade=grade;
+		System.out.println("\nName :"+name+"\t Age :"+age+"\t Grade :"+grade);
 	}
 }
 public class PersionEx1 { // create main class .
