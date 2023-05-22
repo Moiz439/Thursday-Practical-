@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+<!--  <bean class="com.SpringProject.Student" name="s1"> -->
+<!--  	<property name="sid"> -->
+<!--  	     <value>101</value> -->
+<!--  	</property> -->
+<!--  	<property name="sname"> -->
+<!--  	   	<value>Mueez</value> -->
+<!--  	</property> -->
+<!--  	<property name="scity"> -->
+<!--  		<value>Solapur</value> -->
+<!--  	</property> -->
+<!--  </bean> -->
+ 
+<!--  <bean class="com.SpringProject.Student" name="s2"> -->
+<!--  	<property name="sid"> -->
+<!--  	     <value>102</value> -->
+<!--  	</property> -->
+<!--  	<property name="sname"> -->
+<!--  	   	<value>SK</value> -->
+<!--  	</property> -->
+<!--  	<property name="scity"> -->
+<!--  		<value>Solapur</value> -->
+<!--  	</property> -->
+<!--  </bean> -->
+ 
+<!--  <bean class="com.EmployeeProject.Employee" name="e1"> -->
+<!--  	<property name="eid"> -->
+<!--  	     <value>101</value> -->
+<!--  	</property> -->
+<!--  	<property name="ename"> -->
+<!--  	   	<value>Mazen</value> -->
+<!--  	</property> -->
+<!--  	<property name="designation"> -->
+<!--  		<value>Tester</value> -->
+<!--  	</property> -->
+<!--  </bean> -->
+<!--  <bean class="com.EmployeeProject.Employee" name="e2"> -->
+<!--  	<property name="eid"> -->
+<!--  	     <value>102</value> -->
+<!--  	</property> -->
+<!--  	<property name="ename"> -->
+<!--  	   	<value>Mueez</value> -->
+<!--  	</property> -->
+<!--  	<property name="designation"> -->
+<!--  		<value>Developer</value> -->
+<!--  	</property> -->
+<!--  </bean> -->
+
+<!--  Create Student Class Using Attributes. -->
+<!--  <bean class="com.SpringProject.Student" name="s1"> -->
+<!--      	<property name="sid" value="201"></property> -->
+<!--      	<property name="sname" value="Mueez"></property> -->
+<!--      	<property name="scity" value="Solapur"></property> -->
+<!--  </bean> -->
+ 
+<!--  <bean class="com.SpringConstructor.Student" name="s1"> -->
+<!--  	<constructor-arg value="101"/> -->
+<!--  	<constructor-arg value="Moiz"/> -->
+<!--  	<constructor-arg value="Solapur"/> -->
+<!--  </bean> -->
+
+<bean class="com.EmployeeEx.Address" id="add">
+ 	<constructor-arg value="17"/>
+ 	<constructor-arg value="Shelgi"/>
+</bean>
+
+<bean class="com.EmployeeEx.Employee" name="e1">
+	<constructor-arg value="401"/>
+	<constructor-arg value="SK"/>
+	<constructor-arg ref="add"/>
+</bean>
+ </beans>
